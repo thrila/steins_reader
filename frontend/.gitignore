@@ -1,0 +1,44 @@
+# --- Rust (backend/) ---
+backend/target/
+**/*.rs.bk
+*.pdb
+Cargo.lock.bak
+
+# --- Node / Vite / React (frontend/) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Build output copied into backend for staging ---
+backend/dist/
+
+# --- Env / secrets ---
+.env
+.env.*
+!.env.example
+
+# --- SQLite (dev databases, WAL/SHM sidecar files) ---
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+logs/
